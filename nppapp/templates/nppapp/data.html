@@ -1,0 +1,39 @@
+{% block content %}
+<p><center>INDIAN POSTAL ADDRESS DETAILS</center></p>
+<form>
+<center>
+<table border=1 width=4 height=10>
+<tr>
+<td>officename</td>
+<td>Pincode</td>
+<td>officeType</td>
+<td>Deliverystatus</td>
+<td>divisionname</td>
+<td>regionname</td>
+<td>circlename</td>
+<td>taluk</td>
+<td>Districtname</td>
+<td>statename</td>
+</tr>
+
+{% for contact in x %}   
+
+      
+        <td>{{ contact.officename }}</td>
+        <td>{{ contact.pincode }}</td>
+        <td>{{ contact.officeType}}</td>
+        <td>{{ contact.Deliverystatus}}</td>
+        <td>{{ contact.divisionname}}</td>
+        <td>{{ contact.regionname}}</td>
+        <td>{{ contact.circlename}}</td>
+        <td>{{ contact.taluk}}</td>
+        <td>{{ contact.Districtname}}</td>
+        <td>{{ contact.statename}}</td>
+</tr>
+      
+{% endfor %}
+
+   </table>
+</center>
+</form>
+{% endblock %}

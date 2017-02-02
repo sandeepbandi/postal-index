@@ -1,0 +1,12 @@
+{% block content %}
+<p><center>INDIAN POSTAL ADDRESS</center></p>
+<center>
+<form action="{% url 'retrieve' %}" method='POST'> {% csrf_token %}
+    <div >
+        <label for='enter' pin code'> PINCODE </label>
+        <input type='text' name='PINCODE' id='PINCODE'></br></br>
+        <input type='submit' value='search'></br>
+    </div>
+</form>
+</center>
+{% endblock %}
